@@ -16,7 +16,7 @@ const { Content } = await render(workshop);
 
 <Markdown>
   <div slot="top">
-    <a href="/#workshops">Workshops</a>
+    <a href={`${import.meta.env.BASE_URL}#workshops`}>Workshops</a>
     <h1><span>{workshop.data.title}</span></h1>
   </div>
 
