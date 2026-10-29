@@ -2,6 +2,8 @@
 
 ## Project
 
+
+
 - Website for **Creative Code Kortrijk (CCK)**, a new creative coding club in Kortrijk, Belgium.
 - Audience: people interested in creative coding who want to discover the club's workshops,
   foundations, team and news.
