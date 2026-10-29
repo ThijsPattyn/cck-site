@@ -38,3 +38,9 @@ Thijs Pattyn
 
 
 Milan Demol
+## Hidden code
+
+The 4-digit code can be entered on the `/code` page.
+
+- **Digit 1** (Thijs, Foundations): open all foundations on the home page; the digit is logged
+  in the browser console.
