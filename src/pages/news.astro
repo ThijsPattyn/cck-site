@@ -14,7 +14,7 @@ const items = await Promise.all(
 <Base title="News">
   <div class="container">
     <h2><span>News</span></h2>
-    <p class="code">The third digit of the code is 3</p>
+    <p class="code">SELECT digit FROM code WHERE position = 4; -- 4</p>
     <ul>
       {
         items.map(({ item, Content }) => (
@@ -36,6 +36,17 @@ const items = await Promise.all(
 </Base>
 
 <style>
+  /* Hidden digit: invisible until the text is selected */
+  .code {
+    color: transparent;
+    margin-bottom: var(--sp-s);
+  }
+
+  .code::selection {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+  }
+
   ul > li:not(:last-child) {
     border-bottom: solid grey 1px;
     padding-bottom: var(--sp-l);
