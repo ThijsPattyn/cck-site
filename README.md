@@ -46,3 +46,7 @@ The 4-digit code can be entered on the `/code` page.
   in the browser console.
 - **Digit 2** (Jarne, Team): hover over a team member's profile picture on the home page; the
   photo fades out and the digit appears inside the flower.
+- **Digit 3** (Milan, Workshops): click a workshop illustration on the home page; it spins away
+  and the digit takes its place.
+- **Digit 4** (Milan, News): on the `/news` page, select the (invisible) text right below the
+  title, or press Ctrl/Cmd + A. `SELECT` the digit, literally.

@@ -15,8 +15,18 @@ const { workshop, theme = "grey" } = Astro.props;
     <img
      class="image" src={workshop.data.image.src} alt=""
     />
+    <span class="digit" aria-hidden="true">3</span>
   </div>
 </article>
+
+<script>
+  // Hidden digit: click a workshop illustration to reveal the third digit
+  document.querySelectorAll(".workshop-card .image").forEach((image) => {
+    image.addEventListener("click", () => {
+      image.closest(".workshop-card")?.classList.toggle("revealed");
+    });
+  });
+</script>
 
 <style>
   article {
@@ -60,6 +70,36 @@ const { workshop, theme = "grey" } = Astro.props;
     height: 15rem;
     width: auto;
     aspect-ratio: 1;
+    cursor: pointer;
+    transition:
+      transform 0.6s ease,
+      opacity 0.6s ease;
+  }
+
+  .digit {
+    grid-area: img;
+    align-self: center;
+    justify-self: end;
+    width: 15rem;
+    text-align: center;
+    font-size: var(--fs-5);
+    font-weight: bolder;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+  }
+
+  .revealed .image {
+    transform: rotate(1turn) scale(0.2);
+    opacity: 0.1;
+  }
+
+  .revealed .digit {
+    opacity: 1;
+  }
+
+  .workshop-card--black .digit {
+    color: var(--color-white);
   }
 
   @media (min-width: 30rem) {
