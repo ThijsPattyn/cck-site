@@ -29,7 +29,9 @@
   - `workshops` (`src/content/workshops`): `title`, `image`.
   - `foundations` (`src/content/foundations`): `title`, `description`.
   - `team` (`src/content/team`): `name`, `function`, `bio`, `pic`.
-  - `news` (`src/content/news`): not defined yet; still to be added and exported.
+  - `news` (`src/content/news`): `title`, `date` (`YYYY-MM-DD` in frontmatter, use `z.coerce.date()`).
+    Not defined yet; still to be added and exported. Each team member adds one item from
+    `src/assets/resources/news`.
   - A missing frontmatter field in a markdown file makes the build fail.
 - Components in `src/components` (`Header`, `Hero`, `Footer`, `Workshops`/`WorkshopCard`,
   `Foundations`/`FoundationsCard`, `Team`/`TeamCard`, `ArrowLink`, `Code`), layouts in
