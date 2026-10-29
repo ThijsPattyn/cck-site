@@ -13,7 +13,7 @@ const { id, name, function: role, bio, pic } = Astro.props;
       />
     </div>
   </div>
-  <p class="name"><a href={`/team/${id}`}>{name}</a></p>
+  <p class="name"><a href={`${import.meta.env.BASE_URL}team/${id}`}>{name}</a></p>
   <p class="function">{role}</p>
   <p class="bio">{bio}</p>
 </article>
