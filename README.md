@@ -44,3 +44,5 @@ The 4-digit code can be entered on the `/code` page.
 
 - **Digit 1** (Thijs, Foundations): open all foundations on the home page; the digit is logged
   in the browser console.
+- **Digit 2** (Jarne, Team): hover over a team member's profile picture on the home page; the
+  photo fades out and the digit appears inside the flower.
