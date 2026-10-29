@@ -24,6 +24,22 @@ const foundations = await getCollection("foundations");
   </ul>
 </section>
 
+<script>
+  // Hidden digit: open every foundation to reveal it in the console
+  const foundations = document.querySelectorAll("#foundations details");
+  let revealed = false;
+
+  foundations.forEach((foundation) => {
+    foundation.addEventListener("toggle", () => {
+      const allOpen = [...foundations].every((f) => f.hasAttribute("open"));
+      if (allOpen && !revealed) {
+        revealed = true;
+        console.log("Well explored! The first digit of the code is 1");
+      }
+    });
+  });
+</script>
+
 <style>
   h2 {
     white-space: nowrap;
