@@ -11,3 +11,20 @@
 ### Illustrations
 
 <https://pixels.market/illustrations/doodledo?c=technology>
+
+
+### Names
+
+Thijs Pattyn
+
+Jarne Huyghe
+
+
+
+
+
+
+
+
+
+Milan Demol
